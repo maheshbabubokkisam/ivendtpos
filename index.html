@@ -3,7 +3,7 @@
     <head>
         <base href="http://ivendtpos.com:8080/">
         <meta charset="utf-8">
-        <title>iVend TPOS</title>        
+        <title>iVend TPOS</title>     
         <link rel="stylesheet" href="app/css/bootstrap.min.css" />
         <link rel="stylesheet" href="app/css/kendo.common-bootstrap.min.css" />
         <link rel="stylesheet" href="app/css/kendo.bootstrap.min.css" />
@@ -13,7 +13,7 @@
     </head>
 
     <body>
-        <div class="container" ng-app="myApp" ng-controller="Main">
+        <div class="container">
             <!-- Start main wrapper -->
             <div id="main-wrapper"> <!-- ng-view -->
                 <!-- Start Top menu and Search -->
@@ -40,23 +40,57 @@
                 <!-- End Top menu and Search -->
 
                 <!-- Start Transaction Layout -->
-                <div class="transaction-layout col-lg-12">
-                    <div class="transaction-left-layout col-lg-7">
-                        <div class="transaction-customer-layout">
-                            <div><img src="images/" alt="" /></div>
-                            <div><label>ID:</label></div>
-                            <div><label>Name:</label></div>
-                            <div><label>Contact:</label></div>
-                            <div><label>Credit Limit:</label></div>
-                            <div><label>Balance:</label></div>
-                            <div><label>Available Points:</label></div>
+                <div class="row col-lg-12 transaction-layout ">
+                    <div class="col-lg-7 transaction-left-layout">
+                        <div class="row transaction-customer-layout" ng-controller="customersController">
+                            <div class="col-lg-2">
+                                <div class="row">
+                                    <img src="app/images/u217.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="row"><label>ID:</label>{{Customers.id}}</div>
+                                <div class="row"><label>Name:</label>{{Customers.name}}</div>
+                                <div class="row"><label>Contact:</label>{{Customers.contact}}</div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="row"><label>Credit Limit:</label>{{Customers.creditLimit}}</div>
+                                <div class="row"><label>Balance:</label>{{Customers.balance}}</div>
+                                <div class="row"><label>Available Points:</label>{{Customers.availablePoints}}</div>
+                            </div>
                         </div>
-                        <div class="transaction-item-grid">&nbsp;</div>
-                        <div class="transaction-total-layout">&nbsp;</div>                    
+                        <div class="row transaction-item-grid" ng-controller="transactionItemGridController">
+                            <div kendo-grid k-options="transactionItemGridOptions" k-ng-delay="transactionItemGridOptions"></div>
+                        </div>
+                        <div class="row transaction-total-layout">
+                            <div class="row">
+                                <div class="col-lg-2"><div><lable>Subtotal</div> <div><span>{{Transaction.Total.subtotal}} $200.00</span></div></div>
+                                <div class="col-lg-2"><div><lable>Tax</div> <div><span>{{Transaction.Total.tax}}$20.00</span></div></div>
+                                <div class="col-lg-2"><div><lable>Surcharge</div> <div><span>{{Transaction.Total.surcharge}}$0.00</span></div></div>
+                                <div class="col-lg-2"><div><lable>Item(s)/Qty</div> <div><span>{{Transaction.Total.items}}2/{{Transaction.Total.quantity}}1</span></div></div>
+                                <div class="col-lg-2"><div><lable>Discount</div> <div><span>{{Transaction.Total.discount}}0.00</span></div></div>
+                                <div class="col-lg-2"><div><lable>Net total</div> <div><span>{{Transaction.Total.netTotal}}220.00</span></div></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="transaction-right-layout col-lg-5">
-                        <div>&nbsp;</div>
+                    <div class="col-lg-5 transaction-right-layout">
+                        <div class="row">
+                        </div>
+                        <div class="row frequently-used-product-buttons">                            
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                            <div class="col-lg-3"><button>Button</button></div>
+                        </div>
                     </div>
                 </div>
                 <!-- End Transaction Layout -->
@@ -72,7 +106,11 @@
         <script src="lib/angular.min.js"></script>
         <script src="lib/kendo.all.min.js"></script>
         <script src="lib/angular-route.js"></script>
+
+        <script src="app/modules/customers/customersModule.js"></script>
+        <script src="app/modules/customers/js/customersController.js"></script>
         <script src="app/js/mainModule.js"></script>
+        <script src="app/js/mainController.js"></script>
         <script>
             $(document).ready(function() {
                 var saleMenuData = [
