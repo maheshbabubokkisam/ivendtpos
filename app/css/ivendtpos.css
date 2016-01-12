@@ -1,0 +1,113 @@
+.container{
+	border: 1px solid #ddd;
+	padding: 0px;
+	min-width:1024px;
+	width:100%;
+}
+
+#top-menu{
+	margin-top: 5px;
+}
+
+#top-menu .nav div{
+	float: left;
+	border: 1px solid #eee;
+	padding: 0px;
+	margin-left: 5px;
+}
+
+#top-menu .nav div button, #top-menu .nav div select{
+	border: 0px;
+    color: #000;
+    background: #fff;
+    font-weight: 400;
+    padding: 10px 15px 10px 15px;
+    font-size: 12px;
+}
+
+.salemenu{
+	width: 130px;
+}
+
+#salemenu-list{
+	border: 5px solid #666666;
+	border-radius: 0px;
+	padding: 0px;
+}
+#salemenu-list div{
+	padding: 0px;
+}
+#salemenu-list ul{
+
+}
+#salemenu-list ul li{
+	border-radius: 0px;
+	background: none;
+	color: #666666;
+	text-transform: uppercase;
+	border: 0px;
+	border-bottom:5px solid #666666;
+}
+#salemenu-list ul li:last-child{
+	border: 0px;
+}
+
+#salemenu-list ul li .k-state-selected, #salemenu-list ul li .k-state-focused{
+	border-radius: 0px;
+}
+
+#top-menu .nav div.more-down{
+	background: #000;    
+    font-size: inherit;
+    border: 1px;
+}
+
+#top-menu .nav div.more-down button{
+	background: inherit;
+    color: #fff;    
+    border: 0px;
+    padding: 11px 12px 10px 12px;
+}
+
+.search {
+	padding-right: 5px;
+}
+
+form.form-search {
+    position: relative;    
+}
+form.form-search div{
+	border: 1px solid #ddd;
+}
+form.form-search input, form.form-search button{
+	border: 0px;
+	background: none;
+}
+
+input.search-query {    
+    width:81%;
+	line-height: 35px;
+	padding-left: 10px;
+}
+
+button.magnifier, button.keyboard {
+	font-size: 20px;
+}
+
+footer{
+    background-color: #212223;
+    color: #fff;
+    padding: 5px 0px 5px 0px;
+    font-size: 11px;
+    font-style: italic;
+}
+
+footer .right{
+	text-align: right;
+}
+
+@media (min-width: 1024px){
+	.container {
+	    width: 1024px;
+	}
+}

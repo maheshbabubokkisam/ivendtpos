@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="ivendtposModule">
+    <head>
+        <base href="http://ivendtpos.com:8080/">
+        <meta charset="utf-8">
+        <title>iVend TPOS</title>        
+        <link rel="stylesheet" href="app/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="app/css/kendo.common-bootstrap.min.css" />
+        <link rel="stylesheet" href="app/css/kendo.bootstrap.min.css" />
+        <link rel="stylesheet" href="app/fonts/font-awesome.css" />
+        <!--link rel="stylesheet" href="app/css/kendo.common.min.css" /-->
+        <link rel="stylesheet" href="app/css/ivendtpos.css" />
+    </head>
+
+    <body>
+        <div class="container" ng-app="myApp" ng-controller="Main">
+            <!-- Start main wrapper -->
+            <div id="main-wrapper"> <!-- ng-view -->
+                <!-- Start Top menu and Search -->
+                <div id="top-menu" class="col-lg-12">
+                    <div class="nav navbar-nav col-lg-7">                        
+                        <div class="salemenu">
+                            <input id="salemenu" value="1" style="width: 100%;" />
+                        </div>
+                        <div><button>DASHBOARD</button></div>
+                        <div><button>CUSTOMERS</button></div>
+                        <div><button>PRODUCTS</button></div>
+                        <div class="more-down"><button><i class="fa fa-chevron-down"></i></button></div>  
+                    </div>
+                    <div class="search col-lg-5">                        
+                        <form class="form-search form-inline" ng-submit="search()">
+                            <div>
+                                <input type="text" class="search-query" placeholder="Search" ng-model="searchTerm" />
+                                <button type="submit" class="magnifier"><i class="fa fa-search"></i></button>
+                                <button type="button" class="keyboard"><i class="fa fa-keyboard-o"></i></button>
+                            </div>                                
+                        </form>                        
+                    </div>                   
+                </div>
+                <!-- End Top menu and Search -->
+
+                <!-- Start Transaction Layout -->
+                <div class="transaction-layout col-lg-12">
+                    <div class="transaction-left-layout col-lg-7">
+                        <div class="transaction-customer-layout">
+                            <div><img src="images/" alt="" /></div>
+                            <div><label>ID:</label></div>
+                            <div><label>Name:</label></div>
+                            <div><label>Contact:</label></div>
+                            <div><label>Credit Limit:</label></div>
+                            <div><label>Balance:</label></div>
+                            <div><label>Available Points:</label></div>
+                        </div>
+                        <div class="transaction-item-grid">&nbsp;</div>
+                        <div class="transaction-total-layout">&nbsp;</div>                    
+                    </div>
+
+                    <div class="transaction-right-layout col-lg-5">
+                        <div>&nbsp;</div>
+                    </div>
+                </div>
+                <!-- End Transaction Layout -->
+
+            </div>
+            <!-- End main wrapper -->
+            <footer class="col-lg-12">
+                <div class="left col-lg-6">Powered by CitiXSys</div>
+                <div class="right col-lg-6">Version 1.0.0</div>
+            </footer>
+        </div>
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/kendo.all.min.js"></script>
+        <script src="lib/angular-route.js"></script>
+        <script src="app/js/mainModule.js"></script>
+        <script>
+            $(document).ready(function() {
+                var saleMenuData = [
+                    { text: "Sale", value: "1" },
+                    { text: "Sale Refund", value: "2" },
+                    { text: "Sale Exchange", value: "3" },
+                    { text: "Special Order", value: "4" },
+                    { text: "Adavance Payment", value: "5" },
+                    { text: "Layaway", value: "6" },
+                    { text: "Quotation", value: "7" },
+                    { text: "Gift Certificate", value: "8" },
+                    { text: "Coupoun Issue", value: "9" },
+                ];
+
+                // create DropDownList from input HTML element
+                $("#salemenu").kendoDropDownList({
+                    dataTextField: "text",
+                    dataValueField: "value",
+                    dataSource: saleMenuData,
+                    index: 1,
+                    height: "auto",
+                    change: onChange
+                });
+                function onChange() {
+                }        
+            });
+        </script>     
+    </body>
+</html>
