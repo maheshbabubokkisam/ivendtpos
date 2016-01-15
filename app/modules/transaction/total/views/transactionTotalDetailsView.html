@@ -1,0 +1,10 @@
+<div class="row transaction-total-layout" ng-controller="transactionTotalController">    
+    <div class="row">
+        <div class="col-lg-2"><div><lable>Subtotal</div> <div><span class="currency">{{Transaction.Total.subtotal | currency : "$" : 0}}</span></div></div>
+        <div class="col-lg-2"><div><lable>Tax</div> <div><span class="currency">{{Transaction.Total.tax | currency : "$" : 0}}</span></div></div>
+        <div class="col-lg-2"><div><lable>Surcharge</div> <div><span class="currency">{{Transaction.Total.surcharge | currency : "$" : 0}}</span></div></div>
+        <div class="col-lg-2"><div><lable>Item(s)/Qty</div> <div><span>{{Transaction.Total.items}}/{{Transaction.Total.quantity}}</span></div></div>
+        <div class="col-lg-2"><div><lable>Discount</div> <div><span class="currency">{{Transaction.Total.discount | currency : "$" : 0}}</span></div></div>
+        <div class="col-lg-2"><div><lable>Net total</div> <div><span class="currency">{{Transaction.Total.netTotal | currency : "$" : 0}}</span></div></div>
+    </div>
+</div>

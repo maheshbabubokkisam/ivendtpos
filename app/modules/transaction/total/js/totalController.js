@@ -1,4 +1,4 @@
-angular.module("totalModule")
+angular.module("transaction.total.module",["transaction.module"])
     .controller("transactionItemGridController",
                 ["$scope", function($scope){
                     $scope.transactionItemGridOptions = {
@@ -37,3 +37,26 @@ angular.module("totalModule")
                                 ]
                     };
                 }])
+                .directive('transactionItemGridLayout', function() {
+                    return {
+                        restrict: 'E',
+                        templateUrl: 'app/modules/transaction/items/views/transactionItemGridDetailsView.html'
+                    };
+                })
+    .controller("transactionTotalController",
+                ["$scope","$location","$http", function($scope, $location, $http){
+                    $scope.Transaction = {Total:{}};
+                    $scope.Transaction.Total.subtotal = '200.00';
+                    $scope.Transaction.Total.tax = '20.00';
+                    $scope.Transaction.Total.surcharge = '0.00';
+                    $scope.Transaction.Total.items = '1';
+                    $scope.Transaction.Total.quantity = '2';
+                    $scope.Transaction.Total.discount = '0.00';
+                    $scope.Transaction.Total.netTotal = '220.00';
+                }])
+                .directive('transactionTotalLayout', function() {
+                    return {
+                        restrict: 'E',
+                        templateUrl: 'app/modules/transaction/total/views/transactionTotalDetailsView.html'
+                    };
+                });

@@ -1,1 +1,1 @@
-angular.module("itemsModule",["transactionModule"]);
+angular.module("items.module", ["transaction.module"]);

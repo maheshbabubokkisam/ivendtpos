@@ -26,24 +26,9 @@
 
                         <transaction-customer-details></transaction-customer-details>
 
-                        <transaction-item-grid></transaction-item-grid>
-
-                        <div class="row transaction-item-grid" ng-controller="transactionItemGridController">
-                            <div kendo-grid k-options="transactionItemGridOptions" k-ng-delay="transactionItemGridOptions"></div>
-                        </div>
+                        <transaction-item-grid-layout></transaction-item-grid-layout>
                         
                         <transaction-total-layout></transaction-total-layout>
-
-                        <div class="row transaction-total-layout">
-                            <div class="row">
-                                <div class="col-lg-2"><div><lable>Subtotal</div> <div><span>{{Transaction.Total.subtotal}} $200.00</span></div></div>
-                                <div class="col-lg-2"><div><lable>Tax</div> <div><span>{{Transaction.Total.tax}}$20.00</span></div></div>
-                                <div class="col-lg-2"><div><lable>Surcharge</div> <div><span>{{Transaction.Total.surcharge}}$0.00</span></div></div>
-                                <div class="col-lg-2"><div><lable>Item(s)/Qty</div> <div><span>{{Transaction.Total.items}}2/{{Transaction.Total.quantity}}1</span></div></div>
-                                <div class="col-lg-2"><div><lable>Discount</div> <div><span>{{Transaction.Total.discount}}0.00</span></div></div>
-                                <div class="col-lg-2"><div><lable>Net total</div> <div><span>{{Transaction.Total.netTotal}}220.00</span></div></div>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="col-lg-5 transaction-right-layout">
@@ -70,7 +55,13 @@
 
         <script src="app/modules/customers/customersModule.js"></script>
         <script src="app/modules/customers/js/customersController.js"></script>
+
+        <script src="app/modules/transaction/transactionModule.js"></script>
+        <script src="app/modules/transaction/total/totalModule.js"></script>
+        <script src="app/modules/transaction/total/js/totalController.js"></script>
+
         <script src="app/js/mainModule.js"></script>
-        <script src="app/js/mainController.js"></script>     
+        <script src="app/js/mainController.js"></script>
+        <script src="app/js/filters.js"></script>
     </body>
 </html>

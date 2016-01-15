@@ -226,3 +226,8 @@ footer .right{
 	    width: 1024px;
 	}
 }
+
+span.currency::first-letter {
+	font-size: 10px;
+	color:green;
+}

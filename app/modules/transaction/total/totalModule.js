@@ -1,1 +1,1 @@
-angular.module("totalModule",["transactionModule"]);
+angular.module("transaction.total.module",["transaction.module"]);
