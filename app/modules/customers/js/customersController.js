@@ -8,4 +8,10 @@ angular.module("customersModule")
                     $scope.Customers.creditLimit = '0.00';
                     $scope.Customers.balance = '0.00';
                     $scope.Customers.availablePoints = '0';
-                }]);
+                }])
+                .directive('transactionCustomerDetails', function() {
+                    return {
+                        restrict: 'E',
+                        templateUrl: 'app/modules/customers/views/transactionCustomerDetailsView.html'
+                    };
+                });

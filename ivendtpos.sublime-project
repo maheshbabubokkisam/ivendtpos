@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "/E/CITYXSYS/ivendtpos"
+		},
+		{
+			"path": "/C/inetpub/wwwroot/angular-seed"
 		}
 	]
 }
