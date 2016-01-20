@@ -1,4 +1,9 @@
 angular.module("ivendtposModule")
+    .controller('mainController',[
+        '$scope', '$state', '$timeout', '$rootScope',
+        function($scope, $state, $timeout, $rootScope){
+        }
+    ])
     .directive('frequentlyUsedProductButtons', function() {
         return {
             restrict: 'E',
