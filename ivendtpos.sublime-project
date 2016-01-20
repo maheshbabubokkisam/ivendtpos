@@ -6,6 +6,21 @@
 		},
 		{
 			"path": "/C/inetpub/wwwroot/angular-seed"
+		},
+		{
+			"path": "/C/inetpub/wwwroot/directive-testing"
+		},
+		{
+			"path": "/C/inetpub/wwwroot/ocLazyLoad"
+		},
+		{
+			"path": "/C/inetpub/wwwroot/my-notes"
+		},
+		{
+			"path": "/C/inetpub/wwwroot/loadOnDemand"
+		},
+		{
+			"path": "/C/inetpub/wwwroot/angular-github-clone-fork"
 		}
 	]
 }

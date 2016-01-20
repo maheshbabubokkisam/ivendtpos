@@ -3,58 +3,18 @@
 	{
 		"selected_items":
 		[
+			[
+				"con",
+				"console"
+			],
+			[
+				"font",
+				"font-size"
+			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "app/modules/transaction/total/totalModule.js",
-			"settings":
-			{
-				"buffer_size": 945,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/modules/transaction/transactionModule.js",
-			"settings":
-			{
-				"buffer_size": 37,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 3103,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/js/mainModule.js",
-			"settings":
-			{
-				"buffer_size": 181,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/modules/transaction/items/itemsModule.js",
-			"settings":
-			{
-				"buffer_size": 55,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/inetpub/wwwroot/angular-seed/app/components/version/version-directive.js",
-			"settings":
-			{
-				"buffer_size": 199,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -104,23 +64,55 @@
 	},
 	"file_history":
 	[
-		"/E/CITYXSYS/ivendtpos/app/modules/transaction/total/views/transactionTotalDetailsView.html",
-		"/E/CITYXSYS/ivendtpos/app/modules/customers/js/customersController.js",
-		"/E/CITYXSYS/ivendtpos/app/modules/customers/views/transactionCustomerDetailsView.html",
-		"/E/CITYXSYS/ivendtpos/app/js/mainController.js",
-		"/E/CITYXSYS/ivendtpos/app/js/mainModule.js",
-		"/C/inetpub/wwwroot/angular-seed/app/index.html",
-		"/C/inetpub/wwwroot/angular-seed/app/components/version/version-directive.js",
-		"/C/inetpub/wwwroot/angular-seed/app/components/version/version.js",
-		"/E/CITYXSYS/ivendtpos/app/modules/customers/customersModule.js",
-		"/E/CITYXSYS/ivendtpos/app/modules/transaction/total/js/totalController.js",
+		"/C/Users/maheshbb/AppData/Roaming/Sublime Text 2/Packages/AngularJS/AngularJS-sublime-package.sublime-settings",
+		"/C/inetpub/wwwroot/anuglar-github-clone-fork/ui-view-animation/bar.html",
+		"/C/inetpub/wwwroot/anuglar-github-clone-fork/ui-view-animation/foo.html",
+		"/C/inetpub/wwwroot/anuglar-github-clone-fork/ui-view-animation/js/script.js",
+		"/C/inetpub/wwwroot/anuglar-github-clone-fork/ui-view-animation/index.html",
+		"/C/inetpub/wwwroot/anuglar-github-clone-fork/ui-view-animation/js/angular.hammer.js",
+		"/C/inetpub/wwwroot/loadOnDemand/example/client/js/loadOnDemand.js",
+		"/C/inetpub/wwwroot/loadOnDemand/example/client/js/modules/demand.js",
+		"/C/inetpub/wwwroot/anuglar-github-clone-fork/ui-router-and-view/partials/layout.html",
+		"/C/inetpub/wwwroot/anuglar-github-clone-fork/ui-router-and-view/js/script.js",
+		"/C/inetpub/wwwroot/anuglar-github-clone-fork/ui-router-and-view/index.html",
+		"/C/inetpub/wwwroot/loadOnDemand/example/client/index.html",
+		"/C/inetpub/wwwroot/my-notes/index.html",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/complexExample/js/AppCtrl.js",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/complexExample/js/app.js",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/complexExample/index.html",
+		"/C/inetpub/wwwroot/directive-testing/index.html",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/simpleExample1/js/testApp.js",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/simpleExample1/testLazyLoad.html",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/simpleExample1/index.html",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/requireJSExample/js/require.js",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/complexExample/js/gridModule.js",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/requireJSExample/js/testmodule.js",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/requireJSExample/js/main.js",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/requireJSExample/index.html",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/requireJSExample/partials/grid.html",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/complexExample/partials/main.html",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/complexExample/partials/modal.html",
+		"/C/inetpub/wwwroot/ocLazyLoad/examples/complexExample/README.md",
 		"/E/CITYXSYS/ivendtpos/app/modules/transaction/total/totalModule.js",
-		"/E/CITYXSYS/ivendtpos/app/modules/transaction/items/itemsModule.js",
 		"/E/CITYXSYS/ivendtpos/app/modules/transaction/transactionModule.js",
 		"/E/CITYXSYS/ivendtpos/index.html",
-		"/E/CITYXSYS/ivendtpos/app/modules/transaction/total/itemsModule.js",
+		"/E/CITYXSYS/ivendtpos/app/js/mainModule.js",
+		"/E/CITYXSYS/ivendtpos/app/modules/transaction/items/itemsModule.js",
+		"/E/CITYXSYS/ivendtpos/app/js/mainController.js",
+		"/E/CITYXSYS/ivendtpos/app/js/filters.js",
+		"/E/CITYXSYS/ivendtpos/app/modules/transaction/total/js/totalController.js",
+		"/E/CITYXSYS/ivendtpos/app/modules/transaction/items/views/transactionItemGridDetailsView.html",
+		"/E/CITYXSYS/ivendtpos/app/css/ivendtpos.css",
 		"/E/CITYXSYS/ivendtpos/app/templates/header.html",
 		"/E/CITYXSYS/ivendtpos/app/templates/search.html",
+		"/E/CITYXSYS/ivendtpos/app/modules/transaction/total/views/transactionTotalDetailsView.html",
+		"/C/inetpub/wwwroot/angular-seed/app/components/version/version-directive.js",
+		"/E/CITYXSYS/ivendtpos/app/modules/customers/js/customersController.js",
+		"/E/CITYXSYS/ivendtpos/app/modules/customers/views/transactionCustomerDetailsView.html",
+		"/C/inetpub/wwwroot/angular-seed/app/index.html",
+		"/C/inetpub/wwwroot/angular-seed/app/components/version/version.js",
+		"/E/CITYXSYS/ivendtpos/app/modules/customers/customersModule.js",
+		"/E/CITYXSYS/ivendtpos/app/modules/transaction/total/itemsModule.js",
 		"/E/CITYXSYS/ivendtpos/app/templates/saleMenu.html",
 		"/E/CITYXSYS/ivendtpos/app/templates/frequentlyUsedProductButtons.html",
 		"/C/inetpub/wwwroot/angularjstraining/day3/shoppingcart/app/modules/accounts/views/loginView.html",
@@ -140,6 +132,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"C:\\inetpub\\wwwroot\\angular-github-clone-fork\\ui-view-animation"
 		]
 	},
 	"find_state":
@@ -147,12 +140,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"anon",
+			"hmTouchEvents",
+			"ngSanitize",
+			"ngAnimate",
+			"hmTouchEvents",
+			"fooCtl",
+			"mainCtl",
+			"mainCtl.",
+			"app-content",
+			"getConfig",
+			"modules",
+			"config",
+			"loadScript",
+			"ocLazyLoadProvider",
+			"gridModule",
 			"symbol",
 			"fractionSize",
 			",\n"
 		],
-		"highlight": true,
-		"in_selection": false,
+		"highlight": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
@@ -160,7 +168,7 @@
 			"\"$\"",
 			"0"
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -169,167 +177,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/modules/transaction/total/totalModule.js",
-					"settings":
-					{
-						"buffer_size": 945,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								62,
-								62
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/modules/transaction/transactionModule.js",
-					"settings":
-					{
-						"buffer_size": 37,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								34,
-								16
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 3103,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2775,
-								2792
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 540.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/js/mainModule.js",
-					"settings":
-					{
-						"buffer_size": 181,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104,
-								104
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/modules/transaction/items/itemsModule.js",
-					"settings":
-					{
-						"buffer_size": 55,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								55,
-								55
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/inetpub/wwwroot/angular-seed/app/components/version/version-directive.js",
-					"settings":
-					{
-						"buffer_size": 199,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -397,6 +246,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 244.0,
+	"side_bar_width": 199.0,
 	"status_bar_visible": true
 }
