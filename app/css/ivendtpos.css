@@ -57,23 +57,24 @@ body{
 
 	.salemenu{
 		width: 130px;
+		border:0 !important;
 	}
 
-		#salemenu-list{
+		.menu-list{
 			border: 5px solid #666666;
-			border-radius: 0;
+			border-radius: 0 !important;
 			padding: 0;
 		}
-		#salemenu-list div{
+		.menu-list div{
 			padding:0;
 		}
 		
-		#salemenu-list ul
+		.menu-list ul
 		{
 
 		}
 		
-		#salemenu-list ul li
+		.menu-list ul li
 		{
 			border-radius: 0;
 			background: none;
@@ -83,13 +84,15 @@ body{
 			border-bottom:5px solid #666666;
 		}
 
-		#salemenu-list ul li:last-child{
+		.menu-list ul li:last-child{
 			border: 0;
 		}
 
-		#salemenu-list ul li .k-state-selected, #salemenu-list ul li .k-state-focused{
+		.menu-list ul li .k-state-selected, #salemenu-list ul li .k-state-focused{
 			border-radius: 0;
 		}
+
+		.menu-list .k-dropdown-wrap{border: 0 !important;}
 
 	#top-menu .nav div.more-down{
 		background: #454544;    
@@ -231,3 +234,29 @@ span.currency::first-letter {
 	font-size: 10px;
 	color:green;
 }
+
+/***************** Start ANIMATE CSS *******************/
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+}
+/***************** End ANIMATE CSS *******************/

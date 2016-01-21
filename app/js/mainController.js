@@ -1,7 +1,19 @@
 angular.module("ivendtposModule")
     .controller('mainController',[
-        '$scope', '$state', '$timeout', '$rootScope',
-        function($scope, $state, $timeout, $rootScope){
+        '$scope', '$state', '$timeout', '$rootScope', '$stateParams', '$window',
+        function($scope, $state, $timeout, $rootScope, $stateParams, $window){
+            $scope.changeState = function(_state){
+                console.log(_state);
+                $scope.abstractView = 'show-bar';            
+                $state.go(_state);
+            };
+
+            $scope.saleTypeMenuDataSource = { 
+                transport: { read: {url: "app/modules/transaction/js/transactionType.json"} } 
+            };
+            $scope.saleTypeMenuOnChange = function(e) {                
+                $scope.changeState(this.value());
+            };
         }
     ])
     .directive('frequentlyUsedProductButtons', function() {

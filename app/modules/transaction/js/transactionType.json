@@ -1,0 +1,11 @@
+[
+{"transactionType":"Sale","value":"ivendHome.sale"},
+{"transactionType":"Sale Refund","value":"ivendHome.salerefund"},
+{"transactionType":"Sale Exchange","value":"ivendHome.saleexchange"},
+{"transactionType":"Special Order","value":"ivendHome.specialorder"},
+{"transactionType":"Adavance Payment","value":"ivendHome.advancepayment"},
+{"transactionType":"Layaway","value":"ivendHome.layaway"},
+{"transactionType":"Quotation","value":"ivendHome.quotation"},
+{"transactionType":"Gift Certificate","value":"ivendHome.giftcertificate"},
+{"transactionType":"Coupoun Issue","value":"ivendHome.coupounissue"}
+]

@@ -9,39 +9,44 @@ angular.module(
 			"ngSanitize", 
 			"customersModule", 
 			"transaction.module",
-			"transaction.total.module"
+			"transaction.total.module",
+			"employee.module"
 		]
 	)
 	.config(function($routeProvider, $stateProvider, $urlRouterProvider, $animateProvider){   
-	    //$animateProvider.classNameFilter(/ani-/);
+	    $animateProvider.classNameFilter(/ani-/);
 	    $stateProvider
 	        .state('ivendHome', {
-	            //template:'',
+	            template:'<ui-view class="ani-ui-view" ng-class="abstractView"/>',
 	            abstract:true
 	        })
-	        .state("ivendHome.transaction", {
-	            url: "/transaction",
-	            templateUrl : 'app/modules/transaction/views/transaction.html',
+	        .state("ivendHome.sale", {
+	            url: "/sale",
+	            templateUrl: 'app/modules/transaction/views/transaction.html',            	
 	            controller : 'mainController'
-	        })/*
-	        .state("ivendHome.bar", {
-	            url: "/bar",
-	            templateUrl : 'bar.html',
-	            controller : 'barCtl'
 	        })
-	        .state("ivendHome.mahesh", {
-	            url: "/mahesh",
-	            templateUrl : 'mahesh.html',
-	            controller : 'maheshCtl'
-	        })*/;
+	        .state("ivendHome.salerefund", {
+	            url: "/salerefund",
+	            templateUrl : 'app/modules/transaction/views/salerefund.html',
+	            controller : 'transactionController'
+	        })	        
+	        .state("ivendHome.empdashboard", {
+	            url: "/empdashboard",
+	            templateUrl : 'app/modules/employee/views/dashboard.html',
+	            controller : 'employeeController'
+	        });
 
-	    $urlRouterProvider.otherwise("/transaction");
+	    $urlRouterProvider.otherwise("/sale");
 	})
 
-	.run(function($rootScope){
+	.run(function($rootScope, $state){
 	    $rootScope.$on("$stateChangeStart", function(event, currRoute, prevRoute, rejection) {
 	    });
 	    /*$rootScope.globalFoo = function($state) {console.log($state);};*/
+        $rootScope.changeState = function(_state){
+            $rootScope.abstractView = 'show-bar';
+            $state.go(_state);
+        }	    
 	})
 
 	.animation('.fade-in', function($timeout){
