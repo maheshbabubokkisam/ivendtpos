@@ -3,8 +3,7 @@ angular.module(
 		[
 			"ngRoute", 
 			"kendo.directives", 
-			"ui.router", 
-			"ngAnimate", 
+			"ui.router",
 			"hmTouchEvents", 
 			"ngSanitize", 
 			"customersModule", 
@@ -13,30 +12,51 @@ angular.module(
 			"employee.module"
 		]
 	)
-	.config(function($routeProvider, $stateProvider, $urlRouterProvider, $animateProvider){   
-	    $animateProvider.classNameFilter(/ani-/);
+	.config(function($routeProvider, $stateProvider, $urlRouterProvider){	    
 	    $stateProvider
-	        .state('ivendHome', {
-	            template:'<ui-view class="ani-ui-view" ng-class="abstractView"/>',
-	            abstract:true
-	        })
+			.state('ivendHome',{
+			        url: '/',
+			        views: {
+			            'header': {
+			                template: '<header-layout></header-layout>'
+			            },
+			            'content': {
+			                templateUrl: 'app/templates/content.html' 
+			            },
+			            'footer': {
+			                templateUrl: 'app/templates/footer.html'
+			            }
+			        }
+			    })	        
 	        .state("ivendHome.sale", {
 	            url: "/sale",
-	            templateUrl: 'app/modules/transaction/views/transaction.html',            	
-	            controller : 'mainController'
+				views: {
+						'content@': {
+										templateUrl: 'app/modules/transaction/views/transaction.html',
+										controller: 'mainController'
+									}
+						}
 	        })
 	        .state("ivendHome.salerefund", {
 	            url: "/salerefund",
-	            templateUrl : 'app/modules/transaction/views/salerefund.html',
-	            controller : 'transactionController'
-	        })	        
-	        .state("ivendHome.empdashboard", {
-	            url: "/empdashboard",
-	            templateUrl : 'app/modules/employee/views/dashboard.html',
-	            controller : 'employeeController'
-	        });
+				views: {
+						'content@': {
+										templateUrl: 'app/modules/transaction/views/salerefund.html',
+										controller: 'transactionController'
+									}
+						}
+	        })
+			.state('ivendHome.empdashboard', {
+				url: '/empdashboard',
+				views: {
+						'content@': {
+										templateUrl: 'app/modules/employee/views/dashboard.html',
+										controller: 'employeeController'
+									}
+						}
+			});
 
-	    $urlRouterProvider.otherwise("/sale");
+	    $urlRouterProvider.otherwise("/");
 	})
 
 	.run(function($rootScope, $state){
