@@ -1,8 +1,8 @@
 <div class="search col-lg-5">
-    <form class="form-search form-inline" ng-submit="search()">
+    <form class="form-search form-inline">
         <div>
-            <input type="text" class="search-query" placeholder="Search" ng-model="searchTerm" />
-            <button type="submit" class="magnifier"><i class="fa fa-search"></i></button>
+        	<kendo-auto-complete-search-box></kendo-auto-complete-search-box>            
+            <button type="button" class="magnifier"><i class="fa fa-search"></i></button>
             <button type="button" class="keyboard"><i class="fa fa-keyboard-o"></i></button>
         </div>
     </form>

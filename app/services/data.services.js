@@ -1,0 +1,52 @@
+angular.module('ivendtposModule')
+    .service('dataService', ['$http', function ($http) {
+
+        var urlBase = '/api/';
+
+        this.getSeachDetails = function(){
+            return new kendo.data.DataSource({
+                serverFiltering: true,
+                transport: {
+                                read: {
+                                    url: searchBoxUrl,
+                                    //dataType: "jsonp"
+                                }
+                            },
+                schema: {
+                    model: {
+                        fields: {
+                            ProductID: { type: "number" },
+                            ProductName: { type: "string" },
+                            UnitPrice: { type: "number" }
+                        }
+                    }
+                },
+                template: "#= ProductID # | For: #= ProductName #, #= UnitPrice #",
+                virtual: true,
+            });
+        };
+
+        this.getCustomers = function () {
+            //return $http.get(urlBase);
+        };
+
+        this.getCustomer = function (id) {
+            //return $http.get(urlBase + '/' + id);
+        };
+
+        this.insertCustomer = function (cust) {
+            //return $http.post(urlBase, cust);
+        };
+
+        this.updateCustomer = function (cust) {
+            //return $http.put(urlBase + '/' + cust.ID, cust)
+        };
+
+        this.deleteCustomer = function (id) {
+            //return $http.delete(urlBase + '/' + id);
+        };
+
+        this.getOrders = function (id) {
+            //return $http.get(urlBase + '/' + id + '/orders');
+        };
+    }]);

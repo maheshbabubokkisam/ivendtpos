@@ -7,7 +7,11 @@
         k-data-source="saleTypeMenuDataSource"
         k-data-height="650"
         k-change="saleTypeMenuOnChange"
-        style="width: 100%"></select>
+        style="width: 90%"></select>
+        <script>
+            var kddl = angular.element(document.querySelectorAll("[kendo-drop-down-list]"));
+            console.log(kddl);
+        </script>
     </div>
     <div><button hm-tap="changeState('ivendHome.empdashboard');">DASHBOARD</button></div>
     <div><button hm-tap="changeState('ivendHome.sale');">CUSTOMERS</button></div>
